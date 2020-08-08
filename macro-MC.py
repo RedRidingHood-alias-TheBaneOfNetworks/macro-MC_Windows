@@ -14,9 +14,11 @@ def oFunction(num):
 print("options = attack,build")
 option = input('choose option >>> ')
 if option == "attack":
+	time.sleep(5)
 	mouse.click(Button.left, int(num))
 	oFunction(num)
 
 if option == "build":
+	time.sleep(5)
 	mouse.click(Button.right, int(num))
 	oFunction(num)
